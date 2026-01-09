@@ -1,0 +1,41 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CODC.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CODC.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Call Of Duty Compendium">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    <Grid ColumnDefinitions="250,*">
+        <Grid Grid.Column="0" RowDefinitions="100,*,*,*">
+            <Grid Grid.Row="0" RowDefinitions="*,Auto">
+                <TextBlock Grid.Row="0" VerticalAlignment="Bottom" Margin="10">Search All</TextBlock>
+                <Grid Grid.Row="1" ColumnDefinitions="*,Auto">
+                    <TextBox Grid.Column="0" HorizontalAlignment="Stretch" Height="30"/>
+                    <Button Grid.Column="1">-></Button>
+                </Grid>
+            </Grid>
+            <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                <TextBlock>Categorical Search</TextBlock>
+                <Button>Browse Weapon Families</Button>
+                <Button>Browse By Games</Button>
+            </StackPanel>
+            <StackPanel Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                <TextBlock>Camo Tracker</TextBlock>
+                <Button>Overarching Tracker</Button>
+            </StackPanel>
+            <StackPanel Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10">
+                <TextBlock>About + Quick Links</TextBlock>
+                <Button Click="AboutViewClick">About Page</Button>
+            </StackPanel>
+        </Grid>
+        <ContentControl Grid.Column="1" x:Name="maincont" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+    </Grid>
+</Window>

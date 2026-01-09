@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CODC", "CODC.csproj", "{ACA64257-D123-4866-AE3F-48CF2E38C4C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACA64257-D123-4866-AE3F-48CF2E38C4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA64257-D123-4866-AE3F-48CF2E38C4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA64257-D123-4866-AE3F-48CF2E38C4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA64257-D123-4866-AE3F-48CF2E38C4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

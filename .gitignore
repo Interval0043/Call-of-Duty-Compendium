@@ -1,38 +1,28 @@
-# Thanks to octocat for this one!
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+############################
+# JetBrains Rider
+############################
+.idea/
+*.sln.iml
+*.csproj.user
+*.DotSettings.user
+*.DotSettings
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
+############################
+# .NET / Avalonia
+############################
+bin/
+obj/
+TestResults/
+*.pdb
+*.mdb
+*.axaml.g.cs
+*.cache
 
-# Logs and databases #
-######################
+############################
+# Linux / OS
+############################
 *.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
+*.tmp
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
 Thumbs.db
+
